@@ -1,0 +1,47 @@
+/**
+ * App.css - Estilos principales del layout de la aplicación
+ * ClickEdu Customer Success Dashboard
+ */
+
+/* ====================================== */
+/* LAYOUT PRINCIPAL */
+/* ====================================== */
+.app {
+  display: flex;
+  min-height: 100vh;
+  background-color: #FFFFFF;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px; /* Espacio para el sidebar */
+  min-height: 100vh;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px 30px;
+  background-color: #FFFFFF;
+  overflow-y: auto;
+}
+
+/* ====================================== */
+/* RESPONSIVE DESIGN */
+/* ====================================== */
+@media (max-width: 1200px) {
+  .dashboard-content {
+    padding: 15px 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    margin-left: 0;
+  }
+  
+  .dashboard-content {
+    padding: 10px 15px;
+  }
+}
