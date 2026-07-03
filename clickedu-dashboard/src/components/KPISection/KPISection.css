@@ -1,0 +1,218 @@
+/**
+ * KPISection.css - Estilos del componente KPISection
+ * ClickEdu Customer Success Dashboard
+ * 
+ * Estilos para las tarjetas KPI (Indicadores Clave de Rendimiento)
+ */
+
+/* ====================================== */
+/* CONTENEDOR DE LA SECCIÓN KPI */
+/* ====================================== */
+.kpi-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-bottom: 30px;
+  padding: 20px 0;
+}
+
+/* ====================================== */
+/* TOGGLE BUTTONS (Importe / Nº Cuentas) */
+/* ====================================== */
+.kpi-toggles {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  min-width: 120px;
+}
+
+.toggle-button {
+  padding: 8px 20px;
+  border: 2px solid #E84C4C;
+  border-radius: 4px;
+  background-color: #FFFFFF;
+  color: #E84C4C;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.toggle-button:hover {
+  background-color: #FEF2F2;
+}
+
+.toggle-button.active {
+  background-color: #FEF2F2;
+  border-color: #E84C4C;
+}
+
+/* ====================================== */
+/* CONTENEDOR DE TARJETAS KPI */
+/* ====================================== */
+.kpi-cards {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* ====================================== */
+/* TARJETA KPI INDIVIDUAL */
+/* ====================================== */
+.kpi-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 15px 20px;
+  min-width: 150px;
+  flex: 1;
+}
+
+/* Icono del KPI */
+.kpi-card-icon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.kpi-icon {
+  width: 40px;
+  height: 40px;
+  color: #9CA3AF;
+}
+
+.kpi-info-button {
+  position: absolute;
+  top: -5px;
+  right: -25px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #9CA3AF;
+}
+
+.kpi-info-button:hover {
+  color: #E84C4C;
+}
+
+/* Título del KPI */
+.kpi-card-title {
+  font-size: 12px;
+  color: #6B7280;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+/* Valor principal */
+.kpi-card-value {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-bottom: 8px;
+}
+
+.kpi-main-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.kpi-value-separator {
+  color: #D1D5DB;
+  font-size: 20px;
+}
+
+.kpi-secondary-value {
+  font-size: 20px;
+  font-weight: 600;
+  color: #1F2937;
+}
+
+.kpi-secondary-value.positive {
+  color: #10B981;
+}
+
+/* Variación */
+.kpi-card-variation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+}
+
+.trend-icon {
+  width: 12px;
+  height: 12px;
+}
+
+.trend-icon.decrease {
+  color: #EF4444;
+}
+
+.trend-icon.increase {
+  color: #10B981;
+}
+
+.kpi-variation-value {
+  font-weight: 600;
+}
+
+.kpi-variation-value.decrease {
+  color: #EF4444;
+}
+
+.kpi-variation-value.increase {
+  color: #10B981;
+}
+
+.kpi-variation-desc {
+  color: #9CA3AF;
+  font-size: 11px;
+}
+
+/* ====================================== */
+/* RESPONSIVE */
+/* ====================================== */
+@media (max-width: 1200px) {
+  .kpi-section {
+    flex-direction: column;
+  }
+  
+  .kpi-toggles {
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  .kpi-cards {
+    flex-wrap: wrap;
+  }
+  
+  .kpi-card {
+    min-width: calc(33.33% - 20px);
+  }
+}
+
+@media (max-width: 768px) {
+  .kpi-card {
+    min-width: calc(50% - 10px);
+  }
+  
+  .kpi-main-value {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 480px) {
+  .kpi-card {
+    min-width: 100%;
+  }
+}
