@@ -1,0 +1,88 @@
+/**
+ * Sidebar.css - Estilos del componente Sidebar
+ * ClickEdu Customer Success Dashboard
+ */
+
+/* ====================================== */
+/* CONTENEDOR PRINCIPAL DEL SIDEBAR */
+/* ====================================== */
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 60px;
+  height: 100vh;
+  background-color: #FFFFFF;
+  border-right: 1px solid #E5E7EB;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  z-index: 100;
+}
+
+/* ====================================== */
+/* NAVEGACIÓN */
+/* ====================================== */
+.sidebar-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+}
+
+/* ====================================== */
+/* ITEMS DEL MENÚ */
+/* ====================================== */
+.sidebar-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 50px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #6B7280;
+  transition: all 0.2s ease;
+  position: relative;
+}
+
+.sidebar-item:hover {
+  color: #E84C4C;
+  background-color: #FEF2F2;
+}
+
+/* Estado activo */
+.sidebar-item.active {
+  color: #E84C4C;
+  background-color: #FEF2F2;
+}
+
+.sidebar-item.active::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background-color: #E84C4C;
+  border-radius: 0 4px 4px 0;
+}
+
+/* ====================================== */
+/* ICONOS */
+/* ====================================== */
+.sidebar-item svg {
+  width: 24px;
+  height: 24px;
+}
+
+/* ====================================== */
+/* RESPONSIVE */
+/* ====================================== */
+@media (max-width: 768px) {
+  .sidebar {
+    display: none;
+  }
+}
