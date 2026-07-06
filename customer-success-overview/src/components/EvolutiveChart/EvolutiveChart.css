@@ -1,0 +1,79 @@
+/* ===========================================
+   EVOLUTIVECHART - Estilos del componente EvolutiveChart
+   =========================================== */
+
+.evolutive-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 100%;
+  margin-top: 30px;
+}
+
+/* Título */
+.evolutive-chart__title {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Leyenda personalizada */
+.evolutive-chart__legend {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding-left: 55px;
+}
+
+.evolutive-chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.evolutive-chart__legend-color {
+  width: 9px;
+  height: 9px;
+  border-radius: 0;
+}
+
+.evolutive-chart__legend-line {
+  width: 13px;
+  height: 0;
+  border-top: 2px dashed #AE3C33;
+}
+
+.evolutive-chart__legend-text {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #666666;
+  text-transform: capitalize;
+}
+
+/* Contenedor del gráfico */
+.evolutive-chart__container {
+  width: 100%;
+  min-height: 320px;
+}
+
+/* Estilos para Recharts */
+.evolutive-chart__container .recharts-cartesian-grid-horizontal line {
+  stroke: #EBEBEB;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .evolutive-chart__legend {
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-left: 20px;
+  }
+  
+  .evolutive-chart__container {
+    min-height: 250px;
+  }
+}
