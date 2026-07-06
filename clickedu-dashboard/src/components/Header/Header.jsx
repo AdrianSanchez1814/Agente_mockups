@@ -9,18 +9,18 @@
 
 import React from 'react';
 import './Header.css';
-import logo from '../../assets/images/clickedu-logo.png';
 
 const Header = () => {
   return (
     <header className="header">
       {/* Logo Section */}
       <div className="header__logo-container">
-        <img 
-          src={logo} 
-          alt="Clickedu - a Sanoma company" 
-          className="header__logo"
-        />
+        <div className="header__logo">
+          <span className="header__logo-text">
+            clic<span className="header__logo-k">k</span>edu
+          </span>
+          <span className="header__logo-subtitle">a Sanoma company</span>
+        </div>
       </div>
 
       {/* Title Section */}
