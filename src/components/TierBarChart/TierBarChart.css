@@ -1,0 +1,96 @@
+/**
+ * TierBarChart.css - TierBarChart Component Styles
+ * Customer Success Dashboard - ClickEdu
+ */
+
+.tier-chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 30px;
+  border-left: 1px dashed #D6D6D6;
+}
+
+/* Chart Title */
+.tier-chart-container .chart-title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #666666;
+  line-height: 32px;
+}
+
+/* Chart Container */
+.tier-chart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 88px;
+  height: 200px;
+  padding-bottom: 30px;
+}
+
+/* Bar Wrapper */
+.tier-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Value Label */
+.tier-value {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* Bar */
+.tier-bar {
+  width: 73px;
+  border-radius: 0;
+}
+
+/* Tier Label */
+.tier-label {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .tier-chart {
+    gap: 40px;
+  }
+  
+  .tier-bar {
+    width: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .tier-chart-container {
+    padding-left: 20px;
+    border-left: none;
+    border-top: 1px dashed #D6D6D6;
+    padding-top: 20px;
+  }
+  
+  .tier-chart {
+    gap: 30px;
+  }
+  
+  .tier-value {
+    font-size: 14px;
+  }
+  
+  .tier-label {
+    font-size: 14px;
+  }
+}
