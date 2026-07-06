@@ -1,0 +1,89 @@
+/* ===========================================
+   APP - Estilos principales del layout
+   =========================================== */
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  width: 100%;
+  background-color: #FFFFFF;
+}
+
+/* Contenedor principal */
+.app__main {
+  display: flex;
+  flex-direction: column;
+  margin-left: 79px; /* Ancho del Sidebar */
+  min-height: calc(100vh - 79px);
+  width: calc(100% - 79px);
+}
+
+/* Área de contenido */
+.app__content {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+}
+
+/* ===========================================
+   RESPONSIVE DESIGN
+   =========================================== */
+
+@media (max-width: 1200px) {
+  .app__main {
+    margin-left: 60px;
+    width: calc(100% - 60px);
+  }
+}
+
+@media (max-width: 768px) {
+  .app__main {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+/* ===========================================
+   UTILIDADES
+   =========================================== */
+
+/* Scrollbar personalizado */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c1c1c1;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #a1a1a1;
+}
+
+/* Selección de texto */
+::selection {
+  background-color: rgba(253, 61, 74, 0.2);
+  color: #000000;
+}
+
+/* Focus visible para accesibilidad */
+*:focus-visible {
+  outline: 2px solid #FD3D4A;
+  outline-offset: 2px;
+}
+
+/* Transiciones suaves globales */
+button,
+a {
+  transition: all 0.2s ease;
+}

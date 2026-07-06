@@ -1,0 +1,30 @@
+/* ===========================================
+   LOLLIPOPCHART - Estilos del componente LollipopChart
+   =========================================== */
+
+.lollipop-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Título */
+.lollipop-chart__title {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 32px;
+  color: #666666;
+  margin: 0;
+}
+
+/* Contenedor del gráfico */
+.lollipop-chart__container {
+  width: 100%;
+  max-width: 557px;
+}
+
+/* Estilos para las etiquetas del eje Y */
+.lollipop-chart__container .recharts-yAxis .recharts-cartesian-axis-tick-value {
+  font-family: Tahoma, Geneva, Verdana, sans-serif !important;
+}

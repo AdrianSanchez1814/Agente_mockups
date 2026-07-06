@@ -1,0 +1,82 @@
+/* ===========================================
+   MENUBAR - Estilos del componente MenuBar
+   =========================================== */
+
+.menu-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 60px;
+  background-color: #FD3D4A;
+  padding: 0 38px;
+  border-bottom: 1px solid #FB979E;
+}
+
+/* Lista de tabs */
+.menu-bar__tabs {
+  display: flex;
+  align-items: center;
+  gap: 58px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu-bar__tab-item {
+  margin: 0;
+  padding: 0;
+}
+
+/* Tabs individuales */
+.menu-bar__tab {
+  background: none;
+  border: none;
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  cursor: pointer;
+  text-transform: capitalize;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.menu-bar__tab:hover {
+  opacity: 0.85;
+}
+
+.menu-bar__tab--active {
+  font-weight: 700;
+}
+
+/* Sección derecha */
+.menu-bar__right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.menu-bar__lorem {
+  font-size: 20px;
+  font-weight: 400;
+  color: #FFFFFF;
+  text-align: right;
+}
+
+.menu-bar__info-btn {
+  width: 34px;
+  height: 34px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: opacity 0.2s ease;
+}
+
+.menu-bar__info-btn:hover {
+  opacity: 0.85;
+}
