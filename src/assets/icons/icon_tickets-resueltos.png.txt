@@ -1,0 +1,6 @@
+/* 
+ * Placeholder for icon_tickets-resueltos.png
+ * This file should be replaced with the actual icon image
+ * Used in: KPI Card - Renovado
+ * Size: 50x50px
+ */
