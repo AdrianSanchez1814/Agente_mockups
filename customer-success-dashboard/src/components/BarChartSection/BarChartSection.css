@@ -1,0 +1,50 @@
+/* ==================================================
+   BarChartSection Component Styles
+   ================================================== */
+
+.bar-chart-section {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.bar-chart-section__title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #FD3D4A;
+  display: inline-block;
+}
+
+.bar-chart-section__chart-container {
+  width: 100%;
+  height: calc(100% - 50px);
+  min-height: 200px;
+}
+
+/* Tooltip Styles */
+.bar-chart__tooltip {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 8px 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bar-chart__tooltip-label {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 4px;
+}
+
+.bar-chart__tooltip-value {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  color: #666666;
+}

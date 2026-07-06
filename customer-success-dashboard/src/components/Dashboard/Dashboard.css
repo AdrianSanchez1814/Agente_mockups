@@ -1,0 +1,119 @@
+/* ==================================================
+   Dashboard Component Styles
+   Layout principal del Customer Success Dashboard
+   ================================================== */
+
+.dashboard {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #F5F5F5;
+  padding-bottom: 40px;
+}
+
+/* ============================================
+   Charts Row - Grid de gráficos
+   ============================================ */
+.dashboard__charts-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 20px 60px;
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+/* Card wrapper para cada gráfico */
+.dashboard__chart-card {
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  min-height: 320px;
+  transition: box-shadow 0.2s ease;
+}
+
+.dashboard__chart-card:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+}
+
+/* Large card variant */
+.dashboard__chart-card--large {
+  grid-column: span 1;
+}
+
+/* ============================================
+   Footer Styles
+   ============================================ */
+.dashboard__footer {
+  margin-top: 40px;
+  padding: 20px 60px;
+  text-align: center;
+  border-top: 1px solid #E5E5E5;
+  background-color: #FFFFFF;
+}
+
+.dashboard__footer-text {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  color: #8F8F8F;
+}
+
+/* ============================================
+   Responsive Styles
+   ============================================ */
+@media (max-width: 1400px) {
+  .dashboard__charts-row {
+    padding: 20px 40px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard__charts-row {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 20px 30px;
+  }
+  
+  .dashboard__chart-card--large {
+    grid-column: span 2;
+  }
+}
+
+@media (max-width: 900px) {
+  .dashboard__charts-row {
+    grid-template-columns: 1fr;
+    padding: 15px 20px;
+  }
+  
+  .dashboard__chart-card--large {
+    grid-column: span 1;
+  }
+}
+
+@media (max-width: 600px) {
+  .dashboard__charts-row {
+    padding: 10px 15px;
+    gap: 15px;
+  }
+  
+  .dashboard__footer {
+    padding: 15px 20px;
+  }
+}
+
+/* ============================================
+   Print Styles
+   ============================================ */
+@media print {
+  .dashboard {
+    background-color: #FFFFFF;
+  }
+  
+  .dashboard__chart-card {
+    box-shadow: none;
+    border: 1px solid #E5E5E5;
+    break-inside: avoid;
+  }
+  
+  .dashboard__charts-row {
+    gap: 15px;
+  }
+}
