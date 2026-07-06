@@ -1,0 +1,58 @@
+/* ==================================================
+   LineChartSection Component Styles
+   ================================================== */
+
+.line-chart-section {
+  padding: 20px;
+  background-color: #FFFFFF;
+  border-radius: 8px;
+  height: 100%;
+}
+
+.line-chart-section__title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 16px;
+  padding-bottom: 8px;
+  border-bottom: 2px solid #FD3D4A;
+  display: inline-block;
+}
+
+.line-chart-section__chart-container {
+  width: 100%;
+  height: calc(100% - 50px);
+  min-height: 250px;
+}
+
+/* Tooltip Styles */
+.line-chart__tooltip {
+  background-color: #FFFFFF;
+  border: 1px solid #E5E5E5;
+  border-radius: 4px;
+  padding: 10px 14px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.line-chart__tooltip-label {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 12px;
+  font-weight: 700;
+  color: #3D3D3D;
+  margin-bottom: 6px;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.line-chart__tooltip-value {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 11px;
+  margin: 3px 0;
+}
+
+/* Legend customization */
+.recharts-legend-item-text {
+  font-family: 'Tahoma', sans-serif !important;
+  color: #666666 !important;
+}
