@@ -1,0 +1,70 @@
+/**
+ * ===========================================
+ * ESTILOS: LineChartCard Component
+ * Tipo: Gráfico de Líneas Styles
+ * ===========================================
+ */
+
+.line-chart-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.line-chart-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.line-chart-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.line-chart-card__content {
+  flex: 1;
+  min-height: 0;
+}
+
+/* Custom Tooltip Styles */
+.line-chart__tooltip {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.line-chart__tooltip-label {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: 0 0 8px 0;
+  padding-bottom: 8px;
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.line-chart__tooltip-value {
+  font-size: 13px;
+  margin: 4px 0;
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .line-chart-card {
+    padding: 16px;
+  }
+
+  .line-chart-card__title {
+    font-size: 16px;
+  }
+}
