@@ -19,7 +19,7 @@ import './KPICard.css';
  * @param {number} variation - Variación porcentual o absoluta
  * @param {string} variationType - increase | decrease | neutral
  * @param {string} description - Texto contextual
- * @param {string} icon - Ruta del icono
+ * @param {string|React.ReactNode} icon - Ruta del icono (string) o componente React (SVG inline)
  * @param {string} iconBgColor - Color de fondo del icono
  */
 const KPICard = ({
@@ -54,6 +54,31 @@ const KPICard = ({
 
   const trendConfig = getTrendConfig();
 
+  // Renderiza el icono basado en su tipo
+  const renderIcon = () => {
+    if (!icon) {
+      return null;
+    }
+
+    // Si es un string, renderizar como img tag
+    if (typeof icon === 'string') {
+      return (
+        <img 
+          src={icon} 
+          alt={title} 
+          className="kpi-card__icon"
+        />
+      );
+    }
+
+    // Si es un React element/node, renderizar directamente
+    if (React.isValidElement(icon)) {
+      return icon;
+    }
+
+    return null;
+  };
+
   return (
     <div className="kpi-card">
       {/* Icon Section */}
@@ -61,13 +86,7 @@ const KPICard = ({
         className="kpi-card__icon-container"
         style={{ backgroundColor: iconBgColor }}
       >
-        {icon && (
-          <img 
-            src={icon} 
-            alt={title} 
-            className="kpi-card__icon"
-          />
-        )}
+        {renderIcon()}
       </div>
 
       {/* Content Section */}
@@ -101,7 +120,7 @@ KPICard.propTypes = {
   variation: PropTypes.number,
   variationType: PropTypes.oneOf(['increase', 'decrease', 'neutral']),
   description: PropTypes.string,
-  icon: PropTypes.string,
+  icon: PropTypes.oneOfType([PropTypes.string, PropTypes.node]),
   iconBgColor: PropTypes.string
 };
 
