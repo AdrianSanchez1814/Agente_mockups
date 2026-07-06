@@ -1,0 +1,67 @@
+/* ==================================================
+   Header Component Styles
+   ================================================== */
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 60px 30px;
+  background-color: #FFFFFF;
+}
+
+.header__logo-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.header__logo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header__logo-text {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 72px;
+  font-weight: 400;
+  letter-spacing: -2px;
+}
+
+.header__logo-click {
+  color: #3D3D3D;
+}
+
+.header__logo-k {
+  color: #FD3D4A;
+}
+
+.header__logo-edu {
+  color: #3D3D3D;
+}
+
+.header__logo-subtitle {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #3D3D3D;
+  margin-top: 5px;
+  letter-spacing: 2px;
+}
+
+.header__title-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.header__title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 28px;
+  font-weight: 700;
+  color: #3D3D3D;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
