@@ -1,0 +1,97 @@
+/* ===========================================
+   HEADER - Estilos del componente Header
+   =========================================== */
+
+.header {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 79px;
+  padding: 0 34px;
+  background-color: #FFFFFF;
+  position: relative;
+}
+
+/* Logo */
+.header__logo {
+  width: 190px;
+  height: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-placeholder {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #FD3D4A 0%, #E02D39 100%);
+  border-radius: 4px;
+}
+
+.header__logo-text {
+  color: #FFFFFF;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* Separador vertical */
+.header__separator {
+  width: 1px;
+  height: 51px;
+  background-color: #FD3D4A;
+  margin-left: 25px;
+}
+
+/* Título de sección */
+.header__title {
+  font-size: 30px;
+  font-weight: 400;
+  color: #FD3D4A;
+  margin-left: 23px;
+  flex-grow: 1;
+}
+
+/* Filtros */
+.header__filters {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.header__date-range {
+  font-size: 24px;
+  font-weight: 400;
+  color: #000000;
+  text-transform: capitalize;
+}
+
+.header__filter-divider {
+  width: 1px;
+  height: 51px;
+  background-color: #FD3D4A;
+}
+
+.header__filter-btn {
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: background-color 0.2s ease;
+}
+
+.header__filter-btn:hover {
+  background-color: rgba(253, 61, 74, 0.1);
+}
+
+.header__filter-btn svg {
+  fill: #FFFFFF;
+  stroke: #000000;
+}
