@@ -1,0 +1,70 @@
+/**
+ * ===========================================
+ * ESTILOS: Header Component
+ * Tipo: Header/Navbar Styles
+ * ===========================================
+ */
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 40px;
+  background-color: var(--color-white);
+  border-bottom: 1px solid var(--color-gray-200);
+  box-shadow: var(--shadow-sm);
+}
+
+.header__logo-container {
+  flex: 0 0 auto;
+}
+
+.header__logo {
+  height: 50px;
+  width: auto;
+  object-fit: contain;
+}
+
+.header__title-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 4px;
+}
+
+.header__title {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  margin: 0;
+  line-height: 1.2;
+}
+
+.header__subtitle {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-gray-500);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .header {
+    padding: 16px 20px;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .header__title-container {
+    align-items: center;
+  }
+
+  .header__logo {
+    height: 40px;
+  }
+
+  .header__title {
+    font-size: 24px;
+  }
+}
