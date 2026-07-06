@@ -1,0 +1,57 @@
+/**
+ * SlicerButtons.css - SlicerButtons Component Styles
+ * Customer Success Dashboard - ClickEdu
+ */
+
+.slicer-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: 22px;
+  width: 206px;
+  position: absolute;
+  left: 159px;
+  top: 189px;
+}
+
+/* Slicer Button Base */
+.slicer-btn {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  text-transform: capitalize;
+  color: #EF3340;
+  background-color: transparent;
+  border: 2px solid #EF3340;
+  border-radius: 1px;
+  padding: 6px 15px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: center;
+}
+
+.slicer-btn:hover {
+  background-color: rgba(224, 45, 57, 0.1);
+}
+
+/* Active State */
+.slicer-btn.active {
+  background-color: rgba(224, 45, 57, 0.2);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+  .slicer-buttons {
+    position: relative;
+    left: 0;
+    top: 0;
+    flex-direction: row;
+    width: auto;
+  }
+  
+  .slicer-btn {
+    width: auto;
+    padding: 8px 20px;
+  }
+}
