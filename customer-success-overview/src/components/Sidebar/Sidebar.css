@@ -1,0 +1,68 @@
+/* ===========================================
+   SIDEBAR - Estilos del componente Sidebar
+   =========================================== */
+
+.sidebar {
+  position: fixed;
+  left: 0;
+  top: 79px;
+  width: 79px;
+  height: calc(100vh - 79px);
+  background-color: #FFFFFF;
+  border-right: 1px solid #B8B8B8;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  z-index: 100;
+}
+
+/* Navegación */
+.sidebar__nav {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  width: 100%;
+}
+
+.sidebar__nav--main {
+  flex-grow: 1;
+}
+
+.sidebar__nav--utility {
+  margin-top: auto;
+}
+
+/* Items de navegación */
+.sidebar__nav-item {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  color: #8F8F8F;
+  transition: all 0.2s ease;
+}
+
+.sidebar__nav-item:hover {
+  background-color: rgba(253, 61, 74, 0.1);
+  color: #FD3D4A;
+}
+
+.sidebar__nav-item--active {
+  background-color: rgba(253, 61, 74, 0.15);
+  color: #FD3D4A;
+}
+
+/* Separador */
+.sidebar__divider {
+  width: 50px;
+  height: 1px;
+  background-color: #D6D6D6;
+  margin: 20px 0;
+}
