@@ -1,0 +1,6 @@
+/* 
+ * Placeholder for icon_valid-document.png
+ * This file should be replaced with the actual icon image
+ * Used in: KPI Card - Bajas
+ * Size: 50x50px
+ */
