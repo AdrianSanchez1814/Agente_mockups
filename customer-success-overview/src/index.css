@@ -1,0 +1,59 @@
+/* ===========================================
+   ESTILOS GLOBALES - Customer Success Overview
+   =========================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #FFFFFF;
+  color: #000000;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Variables CSS para colores del tema */
+:root {
+  /* Colores principales */
+  --color-primary: #FD3D4A;
+  --color-primary-light: rgba(224, 45, 57, 0.2);
+  --color-secondary: #EF3340;
+  
+  /* Colores de texto */
+  --color-text-dark: #000000;
+  --color-text-gray: #666666;
+  --color-text-light: #8F8F8F;
+  --color-text-muted: #3D3D3D;
+  
+  /* Colores de fondo */
+  --color-bg-white: #FFFFFF;
+  --color-bg-gray: #D6D6D6;
+  
+  /* Colores de gráficos */
+  --color-chart-red: #CA4536;
+  --color-chart-red-light: #CE8A85;
+  --color-chart-blue: #64A9FF;
+  --color-chart-blue-light: #B7E0FB;
+  --color-chart-sky: #87CCF8;
+  --color-chart-yellow: #E5A949;
+  --color-chart-yellow-light: #FADFA0;
+  --color-chart-green: #3DC331;
+  --color-chart-error: #AE3C33;
+  
+  /* Colores de indicadores */
+  --color-indicator-negative: #CA4536;
+  --color-indicator-positive: #3DC331;
+  
+  /* Bordes */
+  --color-border: #B8B8B8;
+  --color-border-light: #EBEBEB;
+}
+
+#root {
+  width: 100%;
+  min-height: 100vh;
+}
