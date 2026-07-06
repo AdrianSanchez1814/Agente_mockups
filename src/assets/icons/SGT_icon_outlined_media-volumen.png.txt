@@ -1,0 +1,6 @@
+/* 
+ * Placeholder for SGT_icon_outlined_media-volumen.png
+ * This file should be replaced with the actual icon image
+ * Used in: KPI Card - Total a renovar
+ * Size: 50x50px
+ */
