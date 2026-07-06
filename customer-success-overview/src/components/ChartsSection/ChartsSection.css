@@ -1,0 +1,105 @@
+/* ===========================================
+   CHARTSSECTION - Estilos del componente ChartsSection
+   =========================================== */
+
+.charts-section {
+  display: flex;
+  flex-direction: column;
+  padding: 0 38px;
+  margin-top: 40px;
+  width: 100%;
+}
+
+/* Fila superior */
+.charts-section__top-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 0;
+  width: 100%;
+}
+
+/* Sección Lollipop */
+.charts-section__lollipop {
+  flex: 0 0 auto;
+  width: 557px;
+  padding-top: 20px;
+}
+
+/* Sección de Barras */
+.charts-section__bars {
+  flex: 1;
+  padding-left: 20px;
+}
+
+/* Separadores */
+.charts-section__divider {
+  background-color: transparent;
+}
+
+.charts-section__divider--horizontal {
+  width: 100%;
+  height: 1px;
+  background-image: repeating-linear-gradient(
+    to right,
+    #D6D6D6 0px,
+    #D6D6D6 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  margin: 20px 0;
+}
+
+.charts-section__divider--vertical {
+  width: 1px;
+  min-height: 246px;
+  background-image: repeating-linear-gradient(
+    to bottom,
+    #D6D6D6 0px,
+    #D6D6D6 6px,
+    transparent 6px,
+    transparent 12px
+  );
+  margin-top: 52px;
+}
+
+/* Fila inferior */
+.charts-section__bottom-row {
+  width: 100%;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .charts-section__top-row {
+    flex-direction: column;
+  }
+
+  .charts-section__lollipop {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  .charts-section__divider--vertical {
+    width: 100%;
+    height: 1px;
+    min-height: auto;
+    background-image: repeating-linear-gradient(
+      to right,
+      #D6D6D6 0px,
+      #D6D6D6 6px,
+      transparent 6px,
+      transparent 12px
+    );
+    margin: 30px 0;
+  }
+
+  .charts-section__bars {
+    padding-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .charts-section {
+    padding: 0 20px;
+  }
+}
