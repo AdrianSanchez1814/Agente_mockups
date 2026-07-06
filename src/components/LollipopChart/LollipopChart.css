@@ -1,0 +1,118 @@
+/**
+ * LollipopChart.css - LollipopChart Component Styles
+ * Customer Success Dashboard - ClickEdu
+ */
+
+.lollipop-chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  min-width: 557px;
+}
+
+/* Chart Title */
+.chart-title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #666666;
+  line-height: 32px;
+}
+
+/* Lollipop Chart Container */
+.lollipop-chart {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Individual Row */
+.lollipop-row {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 40px;
+  height: 23px;
+}
+
+/* Label */
+.lollipop-label {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  text-align: right;
+  width: 79px;
+  min-width: 79px;
+}
+
+/* Bar Container */
+.lollipop-bar-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  flex: 1;
+}
+
+/* Lollipop Bar */
+.lollipop-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-end;
+  max-width: 412px;
+}
+
+/* Line part of lollipop */
+.lollipop-line {
+  height: 3px;
+  background-color: #3975E4;
+  flex: 1;
+  margin-right: -6px;
+}
+
+/* Circle endpoint */
+.lollipop-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #3975E4;
+  flex-shrink: 0;
+}
+
+/* Value Label */
+.lollipop-value {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .lollipop-chart-container {
+    min-width: 400px;
+  }
+  
+  .lollipop-bar {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .lollipop-chart-container {
+    min-width: 100%;
+  }
+  
+  .lollipop-row {
+    gap: 20px;
+  }
+  
+  .lollipop-label {
+    width: 70px;
+    min-width: 70px;
+    font-size: 14px;
+  }
+}

@@ -1,0 +1,6 @@
+/* 
+ * Placeholder for logo-clickedu.png
+ * This file should be replaced with the actual logo image
+ * Brand: ClickEdu - a Sanoma company
+ * Dimensions: 190x74px
+ */

@@ -1,0 +1,52 @@
+/**
+ * App.css - Main Application Styles
+ * Customer Success Dashboard - ClickEdu
+ */
+
+.app {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #FFFFFF;
+}
+
+.app-body {
+  display: flex;
+  flex: 1;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.dashboard-content {
+  flex: 1;
+  padding: 20px 38px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Charts row container - horizontal layout */
+.charts-row {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1600px) {
+  .charts-row {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 1200px) {
+  .dashboard-content {
+    padding: 15px 20px;
+  }
+}

@@ -1,0 +1,6 @@
+/* 
+ * Placeholder for streamline-sharp_business-idea-money.png
+ * This file should be replaced with the actual icon image
+ * Used in: KPI Card - Ventas adicion. vs ppto
+ * Size: 50x50px
+ */

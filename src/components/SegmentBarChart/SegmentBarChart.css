@@ -1,0 +1,96 @@
+/**
+ * SegmentBarChart.css - SegmentBarChart Component Styles
+ * Customer Success Dashboard - ClickEdu
+ */
+
+.segment-chart-container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding-left: 30px;
+  border-left: 1px dashed #D6D6D6;
+}
+
+/* Chart Title */
+.segment-chart-container .chart-title {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  color: #666666;
+  line-height: 32px;
+}
+
+/* Chart Container */
+.segment-chart {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 88px;
+  height: 200px;
+  padding-bottom: 30px;
+}
+
+/* Bar Wrapper */
+.segment-bar-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+}
+
+/* Value Label */
+.segment-value {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #000000;
+  white-space: nowrap;
+}
+
+/* Bar */
+.segment-bar {
+  width: 73px;
+  border-radius: 0;
+}
+
+/* Category Label */
+.segment-label {
+  font-family: 'Tahoma', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #666666;
+  text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 1400px) {
+  .segment-chart {
+    gap: 40px;
+  }
+  
+  .segment-bar {
+    width: 60px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .segment-chart-container {
+    padding-left: 20px;
+    border-left: none;
+    border-top: 1px dashed #D6D6D6;
+    padding-top: 20px;
+  }
+  
+  .segment-chart {
+    gap: 30px;
+  }
+  
+  .segment-value {
+    font-size: 14px;
+  }
+  
+  .segment-label {
+    font-size: 14px;
+  }
+}
