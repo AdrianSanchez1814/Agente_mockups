@@ -1,0 +1,6 @@
+/* 
+ * Placeholder for icon_tiempo-resolucion.png
+ * This file should be replaced with the actual icon image
+ * Used in: KPI Card - Por renovar
+ * Size: 50x50px
+ */
