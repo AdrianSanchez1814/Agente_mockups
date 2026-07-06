@@ -1,0 +1,45 @@
+/**
+ * ===========================================
+ * ESTILOS: ChartsSection Component
+ * Tipo: Sección de Gráficos Styles
+ * ===========================================
+ */
+
+.charts-section {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  padding: 0 40px 24px 40px;
+}
+
+.charts-section__line-chart {
+  min-height: 400px;
+}
+
+.charts-section__donut-chart {
+  min-height: 400px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 1200px) {
+  .charts-section {
+    grid-template-columns: 1fr;
+  }
+
+  .charts-section__line-chart,
+  .charts-section__donut-chart {
+    min-height: 380px;
+  }
+}
+
+@media (max-width: 768px) {
+  .charts-section {
+    padding: 0 20px 16px 20px;
+    gap: 16px;
+  }
+
+  .charts-section__line-chart,
+  .charts-section__donut-chart {
+    min-height: 350px;
+  }
+}

@@ -1,0 +1,138 @@
+/**
+ * ===========================================
+ * ESTILOS: DonutChartCard Component
+ * Tipo: Gráfico Donut Styles
+ * ===========================================
+ */
+
+.donut-chart-card {
+  background-color: var(--color-white);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  padding: 24px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.donut-chart-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.donut-chart-card__title {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--color-secondary);
+  margin: 0;
+}
+
+.donut-chart-card__content {
+  flex: 1;
+  min-height: 0;
+  position: relative;
+}
+
+/* Center Label (inside donut) */
+.donut-chart-card__center-label {
+  position: absolute;
+  top: 50%;
+  left: 35%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none;
+}
+
+.donut-chart-card__center-value {
+  font-size: 28px;
+  font-weight: 700;
+  color: var(--color-secondary);
+  line-height: 1.2;
+}
+
+.donut-chart-card__center-text {
+  font-size: 14px;
+  color: var(--color-gray-500);
+  margin-top: 4px;
+}
+
+/* Custom Tooltip Styles */
+.donut-chart__tooltip {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-md);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-md);
+}
+
+.donut-chart__tooltip-name {
+  font-size: 14px;
+  font-weight: 600;
+  margin: 0 0 4px 0;
+}
+
+.donut-chart__tooltip-value {
+  font-size: 13px;
+  color: var(--color-gray-600);
+  margin: 0;
+}
+
+/* Custom Legend Styles */
+.donut-chart__legend {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.donut-chart__legend-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.donut-chart__legend-color {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.donut-chart__legend-text {
+  font-size: 13px;
+  color: var(--color-gray-600);
+  flex: 1;
+  min-width: 80px;
+}
+
+.donut-chart__legend-value {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-secondary);
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .donut-chart-card {
+    padding: 16px;
+  }
+
+  .donut-chart-card__title {
+    font-size: 16px;
+  }
+
+  .donut-chart-card__center-label {
+    left: 50%;
+  }
+
+  .donut-chart-card__center-value {
+    font-size: 24px;
+  }
+}
